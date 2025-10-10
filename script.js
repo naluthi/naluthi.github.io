@@ -1,11 +1,22 @@
 // script.js
 
-window.addEventListener('load', function () {
+function hideLoader() {
     const loadingWrapper = document.getElementById('loading-wrapper');
-    loadingWrapper.style.opacity = '0';
-    setTimeout(function () {
-        loadingWrapper.style.visibility = 'hidden';
-    }, 3000);
+    if (!loadingWrapper || loadingWrapper.classList.contains('loading-hidden')) {
+        return;
+    }
+
+    loadingWrapper.classList.add('loading-hidden');
+
+    setTimeout(() => {
+        loadingWrapper.classList.add('loading-removed');
+    }, 350);
+}
+
+window.addEventListener('load', hideLoader);
+document.addEventListener('DOMContentLoaded', () => {
+    // Fallback in case the load event takes too long
+    setTimeout(hideLoader, 1000);
 });
 
 
