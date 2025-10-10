@@ -84,6 +84,11 @@ html {
         position: sticky;
         top: 0;
         z-index: 100;
+        transition: transform 0.3s ease-in-out;
+}
+
+.header.header-hidden {
+        transform: translateY(-100%);
 }
 
 .header-content {
