@@ -15,14 +15,13 @@
     <meta property="og:title" content="Nicolas Luthi — Software Engineer" />
     <meta
       property="og:description"
-      content="Portfolio of Nicolas Luthi, a software engineer based in Phoenix, Arizona."
+      content="Nicolas Luthi, Software @ Wise Pelican"
     />
     <meta property="og:url" content="https://naluthi.github.io/" />
     <meta
       property="og:image"
       content="https://naluthi.github.io/assets/img/og-image.jpg"
     />
-    <meta name="twitter:card" content="summary" />
 
     <link
       rel="preload"
@@ -114,16 +113,6 @@
       <symbol id="i-music" viewBox="0 0 512 512">
         <path
           d="M499.1 6.3c8.1 6 12.9 15.6 12.9 25.7v72V368c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V147L192 223.8V432c0 44.2-43 80-96 80s-96-35.8-96-80s43-80 96-80c11.2 0 22 1.6 32 4.6V200 128c0-14.1 9.3-26.6 22.8-30.7l320-96c9.7-2.9 20.2-1.1 28.3 5z"
-        />
-      </symbol>
-      <symbol id="i-server" viewBox="0 0 512 512">
-        <path
-          d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm48 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0zM64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V352c0-35.3-28.7-64-64-64H64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm56 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"
-        />
-      </symbol>
-      <symbol id="i-notes-medical" viewBox="0 0 512 512">
-        <path
-          d="M96 352V96c0-35.3 28.7-64 64-64H416c35.3 0 64 28.7 64 64V293.5c0 17-6.7 33.3-18.7 45.3l-58.5 58.5c-12 12-28.3 18.7-45.3 18.7H160c-35.3 0-64-28.7-64-64zM272 128c-8.8 0-16 7.2-16 16v48H208c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h48v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16V256h48c8.8 0 16-7.2 16-16V208c0-8.8-7.2-16-16-16H320V144c0-8.8-7.2-16-16-16H272zm24 336c13.3 0 24 10.7 24 24s-10.7 24-24 24H136C60.9 512 0 451.1 0 376V152c0-13.3 10.7-24 24-24s24 10.7 24 24l0 224c0 48.6 39.4 88 88 88H296z"
         />
       </symbol>
       <symbol id="i-gears" viewBox="0 0 640 512">
@@ -483,10 +472,37 @@
           <div class="project-container">
             <article class="project-item">
               <div class="project-cover" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 512 512">
-                  <use href="#i-music" />
+                <svg class="icon" viewBox="0 0 384 512">
+                  <use href="#i-file-lines" />
                 </svg>
               </div>
+              <h3>Worklog</h3>
+              <p class="project-tech">TypeScript · Node.js · CLI</p>
+              <p>
+                A CLI tool built in TypeScript that lets you add, delete,
+                query, and track anything you want right from your terminal.
+              </p>
+              <a
+                href="https://github.com/naluthi/Worklog"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-github-link"
+                aria-label="Worklog on GitHub"
+              >
+                <svg class="icon" viewBox="0 0 496 512" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg>
+              </a>
+            </article>
+            <article class="project-item">
+              <img
+                src="assets/img/passtheaux.png"
+                alt="Pass The Aux"
+                width="720"
+                height="405"
+                loading="lazy"
+                decoding="async"
+              />
               <h3>Pass The Aux</h3>
               <p class="project-tech">
                 React · Django · REST Framework · PostgreSQL
@@ -497,11 +513,11 @@
                 dashboards and notifications delivered over WebSockets.
               </p>
               <a
-                href="https://github.com/naluthi"
+                href="https://github.com/naluthi/PassTheAux"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-github-link"
-                aria-label="Music Sharing Platform on GitHub"
+                aria-label="Pass The Aux on GitHub"
               >
                 <svg class="icon" viewBox="0 0 496 512" aria-hidden="true">
                   <use href="#i-github" />
@@ -509,51 +525,27 @@
               </a>
             </article>
             <article class="project-item">
-              <div class="project-cover" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 512 512">
-                  <use href="#i-server" />
-                </svg>
-              </div>
-              <h3>Service-Oriented Web Application</h3>
-              <p class="project-tech">
-                C# · ASP.NET · XML · JavaScript · IIS Express
-              </p>
+              <img
+                src="assets/img/project-tetris.jpg"
+                alt="Arduino Tetris Arcade"
+                width="320"
+                height="180"
+                loading="lazy"
+                decoding="async"
+              />
+              <h3>Arduino Tetris Arcade</h3>
+              <p class="project-tech">Arduino · C++</p>
               <p>
-                A multi-tier web application separating presentation, business
-                logic, and data layers, with custom authentication, encrypted
-                credential storage, and reusable C# security modules.
+                An arcade game that runs on an Arduino-MEGA with custom-built
+                controls and an LED display, based on the original game of
+                Tetris.
               </p>
               <a
-                href="https://github.com/naluthi"
+                href="https://github.com/naluthi/Arduino-Tetris"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-github-link"
-                aria-label="Service-Oriented Web Application on GitHub"
-              >
-                <svg class="icon" viewBox="0 0 496 512" aria-hidden="true">
-                  <use href="#i-github" />
-                </svg>
-              </a>
-            </article>
-            <article class="project-item">
-              <div class="project-cover" aria-hidden="true">
-                <svg class="icon" viewBox="0 0 512 512">
-                  <use href="#i-notes-medical" />
-                </svg>
-              </div>
-              <h3>Desktop Medical Records Application</h3>
-              <p class="project-tech">Java · JavaFX · MySQL · JUnit</p>
-              <p>
-                A multi-user desktop system with role-based access to sensitive
-                records, secure messaging, and database-backed workflows for
-                records, prescriptions, and appointments.
-              </p>
-              <a
-                href="https://github.com/naluthi"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-github-link"
-                aria-label="Desktop Medical Records Application on GitHub"
+                aria-label="Arduino Tetris Arcade on GitHub"
               >
                 <svg class="icon" viewBox="0 0 496 512" aria-hidden="true">
                   <use href="#i-github" />
@@ -574,7 +566,7 @@
                 results correct under parallel workloads.
               </p>
               <a
-                href="https://github.com/naluthi"
+                href="https://github.com/naluthi/MapReduce-Word-Count-System"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="project-github-link"
@@ -612,62 +604,6 @@
                 </svg>
               </a>
             </article>
-            <article class="project-item">
-              <img
-                src="assets/img/project-tetris.webp"
-                alt="Arduino Tetris Arcade"
-                width="320"
-                height="179"
-                loading="lazy"
-                decoding="async"
-              />
-              <h3>Arduino Tetris Arcade</h3>
-              <p class="project-tech">Arduino · C++</p>
-              <p>
-                An arcade game that runs on an Arduino-MEGA with custom-built
-                controls and an LED display, based on the original game of
-                Tetris.
-              </p>
-              <a
-                href="https://github.com/naluthi/Arduino-Tetris-Arcade-Game"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-github-link"
-                aria-label="Arduino Tetris Arcade on GitHub"
-              >
-                <svg class="icon" viewBox="0 0 496 512" aria-hidden="true">
-                  <use href="#i-github" />
-                </svg>
-              </a>
-            </article>
-            <article class="project-item">
-              <img
-                src="assets/img/project-ai-doctor.webp"
-                alt="AI Doctor Flask App"
-                width="533"
-                height="323"
-                loading="lazy"
-                decoding="async"
-              />
-              <h3>AI Doctor Flask App</h3>
-              <p class="project-tech">Python · Flask · OpenAI API</p>
-              <p>
-                A Flask web application featuring an NLP-powered chatbot that
-                uses the OpenAI API and machine learning to offer health advice
-                and diagnostics based on scientific data.
-              </p>
-              <a
-                href="https://github.com/naluthi/FlaskMedAI-ML"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="project-github-link"
-                aria-label="AI Doctor Flask App on GitHub"
-              >
-                <svg class="icon" viewBox="0 0 496 512" aria-hidden="true">
-                  <use href="#i-github" />
-                </svg>
-              </a>
-            </article>
           </div>
         </div>
       </section>
@@ -686,40 +622,58 @@
             shots from the field will land here soon.
           </p>
           <div class="bird-gallery">
-            <figure class="assets/img/anna-hummingbird.jpeg">
-              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true">
-                <use href="#i-dove" />
-              </svg>
+            <figure class="bird-item">
+              <img
+                src="assets/img/anna-hummingbird.jpeg"
+                alt="Anna's Hummingbird"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Anna's Hummingbird</figcaption>
             </figure>
-            <figure class="assets/img/great-horned-owl.pnpg">
-              <svg class="icon" viewBox="0 0 640 512" aria-hidden="true">
-                <use href="#i-crow" />
-              </svg>
+            <figure class="bird-item">
+              <img
+                src="assets/img/great-horned-owl.png"
+                alt="Great Horned Owls"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Great Horned Owls</figcaption>
             </figure>
-            <figure class="assets/img/pelicans.jpeg">
-              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true">
-                <use href="#i-feather" />
-              </svg>
+            <figure class="bird-item">
+              <img
+                src="assets/img/pelicans.jpeg"
+                alt="American White Pelicans"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>American White Pelicans</figcaption>
             </figure>
-            <figure class="assets/img/killdeer.jpeg">
-              <svg class="icon" viewBox="0 0 576 512" aria-hidden="true">
-                <use href="#i-kiwi-bird" />
-              </svg>
+            <figure class="bird-item">
+              <img
+                src="assets/img/killdeer.jpeg"
+                alt="Killdeer"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Killdeer</figcaption>
             </figure>
-            <figure class="assets/img/acorn-woodpecker.png">
-              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true">
-                <use href="#i-binoculars" />
-              </svg>
+            <figure class="bird-item">
+              <img
+                src="assets/img/acorn-woodpecker.png"
+                alt="Acorn Woodpecker"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Acorn Woodpecker</figcaption>
             </figure>
-            <figure class="assets/img/great-blue-heron.jpeg">
-              <svg class="icon" viewBox="0 0 512 512" aria-hidden="true">
-                <use href="#i-camera" />
-              </svg>
+            <figure class="bird-item">
+              <img
+                src="assets/img/great-blue-heron.jpeg"
+                alt="Great Blue Heron"
+                loading="lazy"
+                decoding="async"
+              />
               <figcaption>Great Blue Heron</figcaption>
             </figure>
           </div>
@@ -771,5 +725,17 @@
         </div>
       </section>
     </main>
+    <footer class="site-footer">
+      <div class="container">
+        <a
+          href="https://www.youtube.com/watch?v=JMG1Nl7uWko"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ad-break-link"
+        >
+          Want a break from the ads?
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
